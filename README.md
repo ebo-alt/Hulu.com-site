@@ -14,6 +14,8 @@ pnpm dev
 bun dev
 ```
 
+<div className='grid grid-cols-1 sm:h-screen sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 h-[200vh]'>
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
@@ -38,3 +40,5 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# Hulu.com-site git init git add . git commit -m first commit git branch -M main git remote add origin https://github.com/ebo-alt/Hulu.com-site.git git push -u origin main
+# Hulu.com-site
