@@ -18,6 +18,7 @@ export default function Home() {
           >
             LOG IN
           </button>
+          
         </div>  
         <div className="flex">
           <div className="flex justify-start items-center flex-col">

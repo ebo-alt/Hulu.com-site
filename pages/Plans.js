@@ -7,7 +7,7 @@ export default function Plans() {
 
   return (
     <main className="bg-gray-100 dark:bg-gray-800 h-[1350px] w-full overflow-x-hidden">
-      <div onClick={()=>router.push("http://localhost:3001/")}  className="bg-white dark:bg-gray-500 w-full h-[60px] flex justify-start items-center">
+      <div onClick={()=>router.push("/")}  className="bg-white dark:bg-gray-500 w-full h-[60px] flex justify-start items-center">
         <img
           src="https://www.hulu.com/static/hitch/static/logos/hulu-logo.svg"
           className="w-[60px] translate-x-8 dark:fill-white"
@@ -50,6 +50,7 @@ export default function Plans() {
             <a className="translate-y-[180px]  translate-x-[46px] absolute text-lg font-semibold">
               / month
             </a>
+            
             <p className="translate-y-[235px] text-gray-500 text-sm tracking-wide absolute flex">
               Access endless entertainment with <br></br> Disney+ (With Ads),
               and award-winning <br></br> Hulu Originals with Hulu (With Ads)
