@@ -1,4 +1,8 @@
+import { useRouter } from 'next/router'
+
+
 export default function Home() {
+  const router = useRouter();
   return (
     <div className="bg-white dark:bg-black h-full subpixel-antialiased">
       <div class="h-[700px] w-full flex justify-start items-center flex-col bg-[url('https://cnbl-cdn.bamgrid.com/assets/62ed936344e6ffbac48c896b2bd327fe171521dd941b6ddc8402e2eae50116fc/original')] bg-cover bg-no-repeat bg-center">
@@ -7,13 +11,14 @@ export default function Home() {
             class="h-5 mt-7 ml-10"
             src="https://www.hulu.com/static/hitch/static/logos/hulu-logo.svg"
           />
-          <button
+          <button 
             type="button"
+            onClick={()=>router.push("/SignUp")}
             class=" h-10   mt-4 text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800"
           >
             LOG IN
           </button>
-        </div>
+        </div>  
         <div className="flex">
           <div className="flex justify-start items-center flex-col">
             <h1 className="text-[#00ed82] font-semibold lg:text-sm md:text-xs sm:text-[10px] tracking-wider">
@@ -25,6 +30,7 @@ export default function Home() {
             </h1>
             <button
               type="button"
+              onClick={()=>router.push("Plans")}
               class="lg:text-sm md:text-[10px] sm:text-[8px] text-center text-black mt-6 w-1/5 focus:outline-none bg-[#336e6b] hover:bg-green-200 focus:ring-4 focus:ring-green-300 font-bold rounded-lg px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
             >
               GET THEM BOTH
@@ -58,10 +64,10 @@ export default function Home() {
         <h1 className="text-black dark:text-white mt-8 text-lg text-center">Watch full seasons of exclusive streaming series, current-season episodes, hit movies, Hulu Originals, kids shows, and more.</h1>
        </div>
        <div className="grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-2 sm:grid-cols-1 gap-6  mt-10">
-          <img className="h-[450px] w-auto rounded hover:border hover:border-8 border-[#44484E]" src="https://cnbl-cdn.bamgrid.com/assets/82fd53644e709344c9e9c1f4ba66519505ecea256294d59a0637bda76ae1436b/original"/>
-          <img className="h-[450px] w-auto rounded hover:border hover:border-8 border-[#44484E]" src="https://cnbl-cdn.bamgrid.com/assets/8c630a19daa8615918152082839724f4dab6538939ba7d3bb45f8faa97acf1b9/original"/>
-          <img className="h-[450px] w-auto rounded hover:border hover:border-8 border-[#44484E]" src="https://cnbl-cdn.bamgrid.com/assets/6293f29d56ae0519362951fa38cf62f61004662eb674e61d99e93e7f064d74ff/original"/>
-          <img className="h-[450px] w-auto rounded hover:border hover:border-8 border-[#44484E]" src="https://cnbl-cdn.bamgrid.com/assets/f3f84cde435747f424ce4ad52d351efc96b5da4765af2f76afa9b86fb5bc9a37/original"/>
+          <img onClick={()=>router.push("/TvShows")} className="h-[450px] w-auto rounded hover:outline hover:outline-4 outline-[#44484E]" src="https://cnbl-cdn.bamgrid.com/assets/82fd53644e709344c9e9c1f4ba66519505ecea256294d59a0637bda76ae1436b/original"/>
+          <img onClick={()=>router.push("/TvShows")} className="h-[450px] w-auto rounded hover:outline hover:outline-4 outline-[#44484E]" src="https://cnbl-cdn.bamgrid.com/assets/8c630a19daa8615918152082839724f4dab6538939ba7d3bb45f8faa97acf1b9/original"/>
+          <img onClick={()=>router.push("/TvShows")} className="h-[450px] w-auto rounded hover:outline hover:outline-4 outline-[#44484E]" src="https://cnbl-cdn.bamgrid.com/assets/6293f29d56ae0519362951fa38cf62f61004662eb674e61d99e93e7f064d74ff/original"/>
+          <img onClick={()=>router.push("/TvShows")} className="h-[450px] w-auto rounded hover:outline hover:outline-4 outline-[#44484E]" src="https://cnbl-cdn.bamgrid.com/assets/f3f84cde435747f424ce4ad52d351efc96b5da4765af2f76afa9b86fb5bc9a37/original"/>
         </div>
         <div className="flex justify-center items-center flex-col mt-32">  
         <h1 className="text-[#00ed82] font-semibold text-sm tracking-wider">
